@@ -33,12 +33,14 @@ header p {
     background: lightblue;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* select all the div in the .pads */
 .pads > div {
     min-height: 30vh;
-    flex: 1 1 40rem;
+    width: 2rem;
+    flex: 1 1 2rem;
 }
 
 .pad1 {
@@ -110,4 +112,32 @@ header p {
 }
 
 @media screen and (max-width: 900px) {
+    .pads > div {
+        min-height: 20vh;
+        width: 10rem;
+        flex: 1 1 15rem;
+    }
+    .visual > div {
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        bottom: 0%;
+        left: 20%;
+        z-index: -1;
+    }
+    @keyframes jump {
+        0%{
+            bottom: 0%;
+            left: 20%;
+        }
+        50%{
+            bottom: 80%;
+            left: 50%;
+        }
+        100%{
+            bottom: 0%;
+            left: 80%;
+        }
+    }
 }
