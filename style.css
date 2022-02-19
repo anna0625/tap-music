@@ -33,16 +33,12 @@ header p {
     background: lightblue;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row
 }
 
 /* select all the div in the .pads */
 .pads > div {
-    min-height: 40vh;
-    min-width: 2rem;
-    flex: 1 1 auto;
+    min-height: 30vh;
+    flex: 1 1 40rem;
 }
 
 .pad1 {
