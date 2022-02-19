@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Redressed', cursive;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 5rem 0rem 3rem 0rem;
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+.pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row
+}
+
+/* select all the div in the .pads */
+.pads > div {
+    min-height: 40vh;
+    min-width: 2rem;
+    flex: 1 1 auto;
+}
+
+.pad1 {
+    background: #60d394;
+}
+.pad1:hover {
+    background: #455a4f;
+    cursor: pointer;
+}
+.pad2 {
+    background: #d36060;
+}
+.pad2:hover {
+    background: #b14334;
+    cursor: pointer;
+}
+.pad3 {
+    background: #c060d3;
+}
+.pad3:hover {
+    background: #dea4ec;
+    cursor: pointer;
+}
+.pad4 {
+    background: #d3d160;
+}
+.pad4:hover {
+    background: #ebff3a;
+    cursor: pointer;
+}
+.pad5 {
+    background: #686868;
+}
+.pad5:hover {
+    background: #c3ffe0;
+    cursor: pointer;
+}
+.pad6 {
+    background: #60d3c4;
+}
+.pad6:hover {
+    background: #321a9b;
+    cursor: pointer;
+}
+
+.visual > div {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+}
